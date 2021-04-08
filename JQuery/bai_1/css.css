@@ -1,0 +1,31 @@
+*{}
+
+.container{
+    text-align: center;
+}
+
+.hieuung {
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.motkhoi h3 {
+    background: #00bcd4;
+    padding: 10px 12px;
+    margin: 0;
+}
+
+.ndmotkhoi {
+    border: 1px solid;
+    padding: 05px;
+    background: darkgray;
+}
+
+.motkhoi h3:hover {
+    background: aqua;
+}
+
+h3.xanh {
+    background: purple;
+}

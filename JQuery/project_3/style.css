@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.noidung {
+    width: 40%;
+    margin: 20px auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tieude{
+    margin-bottom: 30px;
+}
+
+.anh {
+    overflow: hidden;
+}
+.anh img {
+    float: left;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.motkhoi {
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.tieudekhoi:hover {
+    color: green;
+}
+.tieudekhoi:hover  i {
+    margin-right: 0px;
+}
+
+h2.tieudekhoi {
+    padding: inherit;
+    height: 30px;
+    font-size: 50px;
+    color: blue;
+    font-weight: 300;
+    margin-bottom: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.tieudekhoi i {
+    float: right;
+    transition: .4s;
+    margin-right: -50px;
+    /* transform: rotate(180deg); */
+}
+
+.click {
+    color: brown !important;
+}
+
+h2.tieudekhoi.click i {
+    margin-right: 0px;
+    transform: rotate(180deg);
+}
+

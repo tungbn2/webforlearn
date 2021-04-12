@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777777;
+    
+    padding: 30px;
+}
+
+header {
+    background-image: 
+    linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(17,80,99,0.4458158263305322) 52%, rgba(7,20,101,1) 100%), 
+    url('../img/bg-img.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    height: 96vh;
+
+    clip-path: ellipse(66% 52% at 50% 33%); /*Sử dung clip-path để tạo viền cho ảnh*/
+}
+
+.nav-top__logo {
+    top: 20px
+    
+}
+
+.nav-top__logo img {
+    border-radius: 50%;
+    height: 50px;
+}
+
+.text-box {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.heading-primary {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation-name: animationtest;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+.heading-primary__main {
+    display: block;
+    
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 15px;
+}
+
+.heading-primary__sub {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 18px;
+}
+.btn a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btn,
+.btn :link,
+.btn :visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.btn-white {
+    color: #050505;
+    background-color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 20px rgba(0,0,0, 1);
+}
+
+.btn:active {
+    outline: none;
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 20px rgba(0,0,0, 1);
+}
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top:0;
+    left: 0;
+    border-radius: 20px;
+    z-index: -1;
+    background-color: white;
+    transition: all 1s;
+}
+
+.btn:hover::after {
+    transform: scale(2);
+    opacity: 0;
+}
+
+.btn-animate {
+    animation: moveup 1s ease-in 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animationtest {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100px);
+    }
+    40% {
+        transform: translate(0,-60px);
+    }
+    80% {
+        transform: translate(0, -20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes moveup {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    80% {
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
